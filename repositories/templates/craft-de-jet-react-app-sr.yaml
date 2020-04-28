@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: craft-de-jet
+    provider: github
+    repository: react-app
+  name: craft-de-jet-react-app
+spec:
+  description: Imported application for craft-de-jet/react-app
+  httpCloneURL: https://github.com/craft-de-jet/react-app.git
+  org: craft-de-jet
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: react-app
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/craft-de-jet/react-app.git
