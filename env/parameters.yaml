@@ -1,0 +1,10 @@
+adminUser:
+  password: local:k3s-ubn-boot/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: craft.de.jet@gmail.com
+  token: local:k3s-ubn-boot/pipelineUser:token
+  username: craft-de-jet
+prow:
+  hmacToken: local:k3s-ubn-boot/prow:hmacToken
