@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/craft-de-jet/react-app.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: craft-de-jet
+  repo: spring-api
+  url: https://github.com/craft-de-jet/spring-api.git
+  version: ""
+  versionURL: ""

@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: craft-de-jet
+    provider: github
+    repository: spring-api
+  name: craft-de-jet-spring-api
+spec:
+  description: Imported application for craft-de-jet/spring-api
+  httpCloneURL: https://github.com/craft-de-jet/spring-api.git
+  org: craft-de-jet
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spring-api
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/craft-de-jet/spring-api.git
