@@ -4,6 +4,8 @@ autoUpdate:
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config
 cluster:
   clusterName: k3s-ubn-boot
+  devEnvApprovers:
+  - craft-de-jet
   environmentGitOwner: craft-de-jet
   environmentGitPublic: true
   gitKind: github
