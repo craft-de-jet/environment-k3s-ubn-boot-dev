@@ -4,8 +4,6 @@ autoUpdate:
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config
 cluster:
   clusterName: k3s-ubn-boot
-  devEnvApprovers:
-  - craft-de-jet
   environmentGitOwner: craft-de-jet
   environmentGitPublic: true
   gitKind: github
@@ -24,7 +22,6 @@ environments:
       enabled: false
       production: false
   key: dev
-  repository: environment-k3s-ubn-boot-dev
 - ingress:
     domain: ""
     externalDNS: false
@@ -34,7 +31,6 @@ environments:
       enabled: false
       production: false
   key: staging
-  repository: environment-k3s-ubn-boot-staging
 - ingress:
     domain: ""
     externalDNS: false
@@ -44,7 +40,6 @@ environments:
       enabled: false
       production: false
   key: production
-  repository: environment-k3s-ubn-boot-production
 gitops: true
 ingress:
   domain: 192.168.99.101.nip.io
@@ -76,6 +71,6 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: v1.0.442
+  ref: master
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
