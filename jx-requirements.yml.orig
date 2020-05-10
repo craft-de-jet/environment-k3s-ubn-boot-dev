@@ -3,6 +3,24 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config
 cluster:
+<<<<<<< Updated upstream
+  clusterName: k3s-ubn-boot
+  environmentGitOwner: craft-de-jet
+  environmentGitPublic: true
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  provider: kubernetes
+||||||| merged common ancestors
+  clusterName: ""
+  environmentGitOwner: ""
+  environmentGitPublic: false
+  project: ""
+  provider: gke
+  zone: ""
+gitops: true
+=======
   clusterName: k3s-ubn-boot
   devEnvApprovers:
   - craft-de-jet
@@ -13,9 +31,44 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: kubernetes
+>>>>>>> Stashed changes
 environments:
+<<<<<<< Updated upstream
 - ingress:
-    domain: 192.168.99.102.nip.io
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+gitops: true
+||||||| merged common ancestors
+- key: dev
+- key: staging
+- key: production
+=======
+- ingress:
+    domain: 192.168.99.100.nip.io
     externalDNS: false
     ignoreLoadBalancer: true
     namespaceSubDomain: -jx.
@@ -46,8 +99,15 @@ environments:
   key: production
   repository: environment-k3s-ubn-boot-production
 gitops: true
+>>>>>>> Stashed changes
 ingress:
+<<<<<<< Updated upstream
   domain: 192.168.99.102.nip.io
+||||||| merged common ancestors
+  domain: ""
+=======
+  domain: 192.168.99.100.nip.io
+>>>>>>> Stashed changes
   externalDNS: false
   ignoreLoadBalancer: true
   namespaceSubDomain: -jx.
@@ -76,6 +136,12 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: v1.0.452
+<<<<<<< Updated upstream
+  ref: master
+||||||| merged common ancestors
+  ref: "master"
+=======
+  ref: v1.0.442
+>>>>>>> Stashed changes
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
