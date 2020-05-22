@@ -17,3 +17,9 @@ dependencies:
   url: https://github.com/craft-de-jet/spring-api2.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: craft-de-jet
+  repo: springboot-api
+  url: https://github.com/craft-de-jet/springboot-api.git
+  version: ""
+  versionURL: ""
