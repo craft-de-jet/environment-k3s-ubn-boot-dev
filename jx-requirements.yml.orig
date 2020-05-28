@@ -4,6 +4,8 @@ autoUpdate:
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config
 cluster:
   clusterName: k3s-ubn-boot
+  devEnvApprovers:
+  - craft-de-jet
   environmentGitOwner: craft-de-jet
   environmentGitPublic: true
   gitKind: github
@@ -13,7 +15,11 @@ cluster:
   provider: kubernetes
 environments:
 - ingress:
+<<<<<<< Updated upstream
+    domain: 192.168.99.104.nip.io
+=======
     domain: 192.168.1.74.nip.io
+>>>>>>> Stashed changes
     externalDNS: false
     ignoreLoadBalancer: true
     namespaceSubDomain: -jx.
@@ -22,6 +28,7 @@ environments:
       enabled: false
       production: false
   key: dev
+  repository: environment-k3s-ubn-boot-dev
 - ingress:
     domain: ""
     externalDNS: false
@@ -31,6 +38,7 @@ environments:
       enabled: false
       production: false
   key: staging
+  repository: environment-k3s-ubn-boot-staging
 - ingress:
     domain: ""
     externalDNS: false
@@ -40,9 +48,14 @@ environments:
       enabled: false
       production: false
   key: production
+  repository: environment-k3s-ubn-boot-production
 gitops: true
 ingress:
+<<<<<<< Updated upstream
+  domain: 192.168.99.104.nip.io
+=======
   domain: 192.168.1.74.nip.io
+>>>>>>> Stashed changes
   externalDNS: false
   ignoreLoadBalancer: true
   namespaceSubDomain: -jx.
@@ -71,6 +84,10 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: master
+<<<<<<< Updated upstream
+  ref: v1.0.471
+=======
+  ref: v1.0.475
+>>>>>>> Stashed changes
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
